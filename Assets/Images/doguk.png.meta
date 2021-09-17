@@ -1,0 +1,1248 @@
+fileFormatVersion: 2
+guid: b6b0a5a989d2571419eb12d8f99130e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1863486425193776851
+    second: doguk_2
+  - first:
+      213: 8899889550965403489
+    second: doguk_3
+  - first:
+      213: 4316552090447402984
+    second: doguk_4
+  - first:
+      213: 2398441612908608885
+    second: doguk_5
+  - first:
+      213: -8066238311073961416
+    second: doguk_6
+  - first:
+      213: 3679329228727502666
+    second: doguk_10
+  - first:
+      213: -2541155381888299986
+    second: doguk_12
+  - first:
+      213: 4531510351437935450
+    second: doguk_13
+  - first:
+      213: 5668322576291335060
+    second: doguk_14
+  - first:
+      213: -1280987354358102514
+    second: doguk_15
+  - first:
+      213: 8225736176442592344
+    second: doguk_16
+  - first:
+      213: -7398563835111488633
+    second: doguk_17
+  - first:
+      213: 5821500568992236791
+    second: doguk_18
+  - first:
+      213: -5106971148127989839
+    second: doguk_19
+  - first:
+      213: 7730626092522068769
+    second: doguk_20
+  - first:
+      213: -3961193618094723782
+    second: doguk_21
+  - first:
+      213: -6687000642660002731
+    second: doguk_22
+  - first:
+      213: -8208824935325062203
+    second: doguk_23
+  - first:
+      213: -1807044333091908381
+    second: doguk_24
+  - first:
+      213: 6993383909000566013
+    second: doguk_25
+  - first:
+      213: -8849380862393883301
+    second: doguk_26
+  - first:
+      213: 174293160494893441
+    second: doguk_27
+  - first:
+      213: 7478066466575793102
+    second: doguk_28
+  - first:
+      213: -5024826766360776018
+    second: doguk_29
+  - first:
+      213: -7161348297138209248
+    second: doguk_30
+  - first:
+      213: 1823597182632302684
+    second: doguk_31
+  - first:
+      213: -3157633938706579607
+    second: doguk_32
+  - first:
+      213: 3849714161400018641
+    second: doguk_33
+  - first:
+      213: -2722674624044485304
+    second: doguk_34
+  - first:
+      213: -4730843429199673784
+    second: doguk_35
+  - first:
+      213: -409953153755461839
+    second: doguk_36
+  - first:
+      213: -6220132223386848977
+    second: doguk_37
+  - first:
+      213: -7430844121969458822
+    second: doguk_38
+  - first:
+      213: 6571726331266642455
+    second: doguk_39
+  - first:
+      213: 5304688747245418556
+    second: doguk_40
+  - first:
+      213: 3691980005064159991
+    second: doguk_41
+  - first:
+      213: -8417500860810334410
+    second: doguk_42
+  - first:
+      213: -5898332137470507272
+    second: doguk_43
+  - first:
+      213: 4981610923163820101
+    second: doguk_44
+  - first:
+      213: 2627152598937066012
+    second: doguk_45
+  - first:
+      213: -5037926516064763736
+    second: doguk_46
+  - first:
+      213: -4770385630195686112
+    second: doguk_47
+  - first:
+      213: 4350494132558393679
+    second: doguk_48
+  - first:
+      213: -2071331977015905973
+    second: doguk_49
+  - first:
+      213: 1516399942304597680
+    second: doguk_50
+  - first:
+      213: -3907760691115443992
+    second: doguk_51
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: doguk_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 232
+        width: 53
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29ff8e28f09326e0800000000000000
+      internalID: -1863486425193776851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_3
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 232
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fe0899462c28b70800000000000000
+      internalID: 8899889550965403489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_4
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 232
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e75695914977eb30800000000000000
+      internalID: 4316552090447402984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 233
+        width: 51
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57dbeef70f9f84120800000000000000
+      internalID: 2398441612908608885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_6
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 233
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a2aca2ef6fe0090800000000000000
+      internalID: -8066238311073961416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_10
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 234
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47c30a807a9f0330800000000000000
+      internalID: 3679329228727502666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 176
+        width: 49
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cc97fc4a00cbcd0800000000000000
+      internalID: -2541155381888299986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_13
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 176
+        width: 67
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53b679d7a823ee30800000000000000
+      internalID: 4531510351437935450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_14
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 176
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b0c20e95de9ae40800000000000000
+      internalID: 5668322576291335060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 176
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06c7b5c9c4093ee0800000000000000
+      internalID: -1280987354358102514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_16
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 177
+        width: 53
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cc0fc787fa72270800000000000000
+      internalID: 8225736176442592344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_17
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 176
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783c0282465035990800000000000000
+      internalID: -7398563835111488633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_18
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 178
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f444828cef1ac050800000000000000
+      internalID: 5821500568992236791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 133
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf89a57cc46029b0800000000000000
+      internalID: -5106971148127989839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_20
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 133
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bd428f873b84b60800000000000000
+      internalID: 7730626092522068769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_21
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 128
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d6be244630709c0800000000000000
+      internalID: -3961193618094723782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_22
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 131
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554117148500333a0800000000000000
+      internalID: -6687000642660002731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_23
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 131
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cba49aa635641e80800000000000000
+      internalID: -8208824935325062203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_24
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 130
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e49ca0d0c61ce6e0800000000000000
+      internalID: -1807044333091908381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_25
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 127
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df459e9dc9d7d0160800000000000000
+      internalID: 6993383909000566013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_26
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 128
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b556fdeddfea03580800000000000000
+      internalID: -8849380862393883301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_27
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 128
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189041eb4b63b6200800000000000000
+      internalID: 174293160494893441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_28
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 128
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbb203b4dd67c760800000000000000
+      internalID: 7478066466575793102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_29
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 127
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2f03dbdaa344ab0800000000000000
+      internalID: -5024826766360776018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 91
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e7a3c8aa7cd9c90800000000000000
+      internalID: -7161348297138209248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 91
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58933cc9f7be4910800000000000000
+      internalID: 1823597182632302684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_32
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 86
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f3da0a9a4dd24d0800000000000000
+      internalID: -3157633938706579607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_33
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 88
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6f90512aeec6530800000000000000
+      internalID: 3849714161400018641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_34
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 88
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845bbd2dadd173ad0800000000000000
+      internalID: -2722674624044485304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_35
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 85
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846009a57faa85eb0800000000000000
+      internalID: -4730843429199673784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_36
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 87
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137cad757cd8f4af0800000000000000
+      internalID: -409953153755461839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_37
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 88
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21f011d2b6ada9a0800000000000000
+      internalID: -6220132223386848977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_38
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 88
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7106b034a650e890800000000000000
+      internalID: -7430844121969458822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_39
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 88
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712ba30a746733b50800000000000000
+      internalID: 6571726331266642455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_40
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 88
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3833976f4a0e9940800000000000000
+      internalID: 5304688747245418556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_41
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 48
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2b1bfe04c8c3330800000000000000
+      internalID: 3691980005064159991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_42
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 48
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63feade90970f2b80800000000000000
+      internalID: -8417500860810334410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_43
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 43
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6ccc2fb2ae42ea0800000000000000
+      internalID: -5898332137470507272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_44
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 47
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540a26cadbc322540800000000000000
+      internalID: 4981610923163820101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_45
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 47
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a53669e55857420800000000000000
+      internalID: 2627152598937066012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_46
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 44
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a040759680b51ab0800000000000000
+      internalID: -5037926516064763736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_47
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 43
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025ee8e3b8f2ccdb0800000000000000
+      internalID: -4770385630195686112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_48
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 44
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4170981d5f006c30800000000000000
+      internalID: 4350494132558393679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_49
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 44
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b413f029a862143e0800000000000000
+      internalID: -2071331977015905973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_50
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 44
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b60d7a96b55b0510800000000000000
+      internalID: 1516399942304597680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: doguk_51
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 44
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e834da0b58d4c9c0800000000000000
+      internalID: -3907760691115443992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a27fbb88d0cc2e34f881a05ef0434a0b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
