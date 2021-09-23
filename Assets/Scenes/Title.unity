@@ -298,7 +298,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 86879390}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1924143242}
+        m_TargetAssemblyTypeName: GameStart, Assembly-CSharp
+        m_MethodName: GameStart_
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &86879390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,7 +434,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1924143242}
         m_TargetAssemblyTypeName: GameStart, Assembly-CSharp
-        m_MethodName: GameStart_
+        m_MethodName: PopUpUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -656,7 +668,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6dae33c9cd845cd4baf302e2ffa2d7b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aae014256d7a9d24e922d80f927f9069, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -676,7 +688,7 @@ Transform:
   m_GameObject: {fileID: 307578374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.9, z: 2.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -710,6 +722,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce25ada532460243a1ae83f14e76d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeT: {fileID: 0}
+  huntingCount:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &307923521
 Transform:
   m_ObjectHideFlags: 0
@@ -958,8 +982,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 260}
-  m_SizeDelta: {x: 500, y: 500}
+  m_AnchoredPosition: {x: 0, y: 343}
+  m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &516584479
 MonoBehaviour:
@@ -981,7 +1005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ae63939fce3075143894ce6d3c09e2e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fa3a061128bbaa43bd8485a5d32bf47, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1610,6 +1634,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ef990deec51804b9b3eec673e92d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: {fileID: 516584477}
+  crosshair: {fileID: 1241947473}
+  shoot: {fileID: 86879387}
+  startTarget: {fileID: 307578374}
+  info: {fileID: 1119065780}
 --- !u!1 &1951682723
 GameObject:
   m_ObjectHideFlags: 0

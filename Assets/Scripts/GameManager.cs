@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        /* 타이틀 화면에서 에러
         _time -= Time.deltaTime;
         if (_time <= 0)
         {
@@ -40,5 +41,6 @@ public class GameManager : MonoBehaviour
             _time = 10;
         }
         else timeT.text = "Time \n" + Mathf.RoundToInt(_time);
+        */
     }
 }
