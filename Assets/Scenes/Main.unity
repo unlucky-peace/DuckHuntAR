@@ -826,6 +826,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3931023023476306601, guid: 485a7aa98b426494daf5ae655136aff3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3931023023476306602, guid: 485a7aa98b426494daf5ae655136aff3, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1454,6 +1458,15 @@ MonoBehaviour:
   - {fileID: 1056037887}
   - {fileID: 1620871843}
   - {fileID: 1605311091}
+  heart:
+  - {fileID: 1100518076}
+  - {fileID: 827731985}
+  - {fileID: 328370400}
+  bullet:
+  - {fileID: 926348724}
+  - {fileID: 1286990256}
+  - {fileID: 360260430}
+  timeT: {fileID: 1629676661}
 --- !u!1 &1100518076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,6 +2001,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3931023023476306601, guid: f2c906985e0484f4dbcec53387845420, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3931023023476306602, guid: f2c906985e0484f4dbcec53387845420, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -2072,17 +2089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeT: {fileID: 1629676661}
-  huntingCount:
-  - {fileID: 1207333439}
-  - {fileID: 690066496}
-  - {fileID: 1248878157}
-  - {fileID: 505254627}
-  - {fileID: 1588431448}
-  - {fileID: 815465096}
-  - {fileID: 1222009611}
-  - {fileID: 1056037887}
-  - {fileID: 1620871843}
-  - {fileID: 1605311091}
+  stage: 1
 --- !u!4 &1473430475
 Transform:
   m_ObjectHideFlags: 0
@@ -2617,7 +2624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5089735000450126420, guid: 668a5c6553d964541af25890a931327e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5089735000450126420, guid: 668a5c6553d964541af25890a931327e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2666,14 +2673,14 @@ PrefabInstance:
     - target: {fileID: 5089735000450126421, guid: 668a5c6553d964541af25890a931327e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2541155381888299986, guid: b6b0a5a989d2571419eb12d8f99130e6, type: 3}
+      objectReference: {fileID: -1863486425193776851, guid: b6b0a5a989d2571419eb12d8f99130e6, type: 3}
     - target: {fileID: 5089735000450126421, guid: 668a5c6553d964541af25890a931327e, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5089735000450126421, guid: 668a5c6553d964541af25890a931327e, type: 3}
       propertyPath: m_SortingOrder
-      value: 98
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5089735000450126421, guid: 668a5c6553d964541af25890a931327e, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -2986,7 +2993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 151997706257890894, guid: bccff4616cd4f4541873b0bf6013cf87, type: 3}
       propertyPath: onDuckDead.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Laugh
+      value: Hunt
       objectReference: {fileID: 0}
     - target: {fileID: 151997706257890894, guid: bccff4616cd4f4541873b0bf6013cf87, type: 3}
       propertyPath: onDuckDead.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -2995,6 +3002,10 @@ PrefabInstance:
     - target: {fileID: 151997706257890894, guid: bccff4616cd4f4541873b0bf6013cf87, type: 3}
       propertyPath: onDuckDead.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067735342953607688, guid: bccff4616cd4f4541873b0bf6013cf87, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2083512845988171139, guid: bccff4616cd4f4541873b0bf6013cf87, type: 3}
       propertyPath: m_RootOrder

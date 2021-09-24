@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 
 public class Shot : MonoBehaviour
@@ -19,7 +18,6 @@ public class Shot : MonoBehaviour
         //Unity 테스트용 전처리 Crosshair 움직이기
 #if UNITY_EDITOR
         Vector3 mousePos = Input.mousePosition;
-        mousePos.z = -3;
         transform.position = mousePos;
         if(Input.GetMouseButtonDown(0)) Shot_();
 #endif
@@ -46,21 +44,11 @@ public class Shot : MonoBehaviour
                 //총알을 깎음
             }
         }
-        else Debug.Log("Raycast가 안맞음");
-    }
-    
-    void OnDrawGizmos() {
- 
-        float maxDistance = 100;
-        RaycastHit hit;
-        // Physics.Raycast (레이저를 발사할 위치, 발사 방향, 충돌 결과, 최대 거리)
-        bool isHit = Physics.Raycast (transform.position, transform.forward, out hit, maxDistance);
- 
-        Gizmos.color = Color.red;
-        if (isHit) {
-            Gizmos.DrawRay (transform.position, transform.forward * hit.distance);
-        } else {
-            Gizmos.DrawRay (transform.position, transform.forward * maxDistance);
+        else
+        {
+            Debug.Log("Raycast가 안맞음");
+            //이거 데미지 처리를 해야하는데 UIManager Find~로 찾아올까.. GameManager를 거치는 정말 하고 싶지 않은 코드를 짤까 고민중
+            UIManager.Instance.Shot();
         }
     }
 }

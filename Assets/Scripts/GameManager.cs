@@ -1,22 +1,17 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-using UnityEngine.UI;
-using TMPro;
+using UnityEngine.SceneManagement;
+
+
 
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance = null;
+    public int stage = 1;
+    private int _child = 0;
 
-    public TextMeshProUGUI timeT;
-    public GameObject[] huntingCount = new GameObject[10];
-
-    private int hunt = 0;
-    private float _time = 10f;
     //Awake에서 instance 재 할당시 오류나는 문제 해결 바람
     private void Awake() {
         instance = this;
@@ -31,16 +26,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void StageClear()
     {
-        /* 타이틀 화면에서 에러
-        _time -= Time.deltaTime;
-        if (_time <= 0)
-        {
-            Debug.Log("시간초과");
-            _time = 10;
-        }
-        else timeT.text = "Time \n" + Mathf.RoundToInt(_time);
-        */
+        //UIManager에서 호출 처음에는 여기서 카운팅을 하려고 했는데ㅇㅇ..
+        Debug.Log("스테이지 클리어");
     }
+
+    public void GameOver()
+    {
+        _child = UIManager.Instance.transform.childCount;
+        for (int i = 0; i < _child; i++)
+        {
+            GameObject uiObj = UIManager.Instance.transform.GetChild(i).gameObject;
+            uiObj.SetActive(!uiObj.activeSelf);
+        }
+    }
+
+    public void ReturnToTitle()
+    {
+        SceneManager.LoadScene(0);
+    }
+    
 }
