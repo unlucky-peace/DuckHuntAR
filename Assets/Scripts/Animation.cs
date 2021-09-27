@@ -25,7 +25,7 @@ public class Animation : MonoBehaviour
         //오리 생성
         _duck = Instantiate(duckPrefab, new Vector3(-0.02f, -0.1f, 3), Quaternion.identity);
         //오리 애니메이션 재생을 위해 Animator 얻어오기
-        _duckAnim = _duck.GetComponent<Animator>();
-        _duckAnim.SetTrigger(AnStart);
+        //_duckAnim = _duck.GetComponent<Animator>();
+        //_duckAnim.SetTrigger(AnStart);
     }
 }

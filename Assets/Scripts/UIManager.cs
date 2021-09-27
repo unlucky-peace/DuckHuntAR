@@ -29,10 +29,15 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    private void DuckHit()
+    public void DuckHit()
     {
         duck[_hitCount].GetComponent<Image>().color = Color.red;
         _hitCount++;
+        //이거 일단 임시 코드.. 총알 깎인 상태에서 오리 죽이면 총알 복구 되어야 하는데 코드를 어디다 작성해야할지 고민해보자
+        for (int i = 0; i < bullet.Count; i++)
+        {
+            bullet[i].SetActive(true);
+        }
     }
 
     public void Shot() 
@@ -57,7 +62,7 @@ public class UIManager : MonoBehaviour
         _time -= Time.deltaTime;
         if (_time <= 0)
         {
-            Debug.Log("오리야 도망가~");
+            Debug.Log("오리야 도망가~(시간초과)");
             _time = 10;
         }
         else timeT.text = "Time \n" + Mathf.RoundToInt(_time);

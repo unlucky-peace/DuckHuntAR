@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Duck1Start
+  m_Name: DuckStart
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
