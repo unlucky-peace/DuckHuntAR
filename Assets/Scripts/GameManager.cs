@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public int stage = 1;
     private int _child = 0;
 
+    public bool isGameOver = false;
+
     //Awake에서 instance 재 할당시 오류나는 문제 해결 바람
     private void Awake() {
         instance = this;
@@ -34,6 +36,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        Debug.Log("게임오버");
         _child = UIManager.Instance.transform.childCount;
         for (int i = 0; i < _child; i++)
         {

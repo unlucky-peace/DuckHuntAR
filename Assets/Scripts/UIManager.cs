@@ -15,8 +15,8 @@ public class UIManager : MonoBehaviour
     private int _hitCount = 0;
     public int shot = 0;
     private int _damage = 0;
-    private float _time = 10f;
-    
+
+
     private void Awake() {
         instance = this;
     }
@@ -55,38 +55,34 @@ public class UIManager : MonoBehaviour
         {
             bullet[i].SetActive(true);
         }
+        shot = 0;
     }
 
     private void Update()
     {
-        _time -= Time.deltaTime;
-        if (_time <= 0)
+        //아 극혐
+        if (!GameManager.Instance.isGameOver)
         {
-            Debug.Log("오리야 도망가~(시간초과)");
-            _time = 10;
-        }
-        else timeT.text = "Time \n" + Mathf.RoundToInt(_time);
+            if (_hitCount == 10)
+            {
+                GameManager.Instance.StageClear();
+                _hitCount = 0;
+            }
 
-        if (_hitCount == 10)
-        {
-            GameManager.Instance.StageClear();
-            _hitCount = 0;
+            if (shot == 3)
+            {
+                Debug.Log("피깎임");
+                Damaged();
+                //여기서.. 오리를 도망가게하는 코드를 짜야하는데 아 Duck 스크립트를 찾아오면 버그가 있을것 같고 GameManager경유하기는 싫고
+                //일단은 Duck 스크립트에서 값을 매번 검사하는 형태로
+            }
+            
+            if (_damage == 3)
+            {
+                _damage = 0;
+                GameManager.Instance.GameOver();
+                GameManager.Instance.isGameOver = true;
+            }
         }
-
-        if (shot == 3)
-        {
-            Debug.Log("피깎임");
-            Damaged();
-            //여기서.. 오리를 도망가게하는 코드를 짜야하는데 아 Duck 스크립트를 찾아오면 버그가 있을것 같고 GameManager경유하기는 싫고
-            //일단은 Duck 스크립트에서 값을 매번 검사하는 형태로
-        }
-
-        if (_damage == 3)
-        {
-            Debug.Log("게임오버");
-            _damage = 0;
-            GameManager.Instance.GameOver();
-        }
-
     }
 }

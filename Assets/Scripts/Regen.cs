@@ -16,11 +16,10 @@ public class Regen : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(5f);
             if (!duck[0].activeSelf)
             {
-                //regenPosition = new Vector3(Random.Range(-1.5f, 1.5f), -0.7f , 3);
-                _regenPosition = new Vector3(Random.Range(-1.5f, 1.5f), 0.32f, 3);
+                _regenPosition = new Vector3(Random.Range(-1.3f, 1.3f), -0.32f, 3);
                 //리젠 포지션 x값만 랜덤으로
                 duck[0].transform.position = _regenPosition;
                 duck[0].SetActive(true);
