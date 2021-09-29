@@ -11,8 +11,8 @@ public class Duck : MonoBehaviour
     public bool isDead = false;
     private bool _isFalling = false;
     private bool _isMoving = true;
-    private bool _isRunaway = false;
-    private bool _runAway = false;
+    private bool _timeRunaway = false;
+    private bool _runaway = false;
     #endregion
     #region Value
     [Range(0, 20)]
@@ -21,6 +21,7 @@ public class Duck : MonoBehaviour
     private int _signY = 1;
     private int _duckAngle = 0;
     private float _time = 10f;
+    private float _acceleration = 0f;
     #endregion
     #region Component
     private Animator _duckAnim;
@@ -43,6 +44,7 @@ public class Duck : MonoBehaviour
     {
         _isMoving = true;
         _time = 10f;
+        _acceleration = GameManager.Instance.stage;
     }
     #endregion
 
@@ -68,16 +70,15 @@ public class Duck : MonoBehaviour
 
     IEnumerator DuckRunAway()
     {
-        _runAway = false;
-        Debug.Log("오리야 도망가~");
         //위로 날아감
         _isMoving = false;
-        _isRunaway = true;
+        _runaway = true;
+        _timeRunaway = false;
+        //위로 날아감
         transform.rotation = Quaternion.Euler(0, 0, 0);
         _duckAnim.SetBool(RunAway, true);
         UIManager.Instance.Damaged();
         yield return new WaitForSeconds(3f);
-        _isRunaway = false;
         gameObject.SetActive(false);
     }
 
@@ -101,7 +102,14 @@ public class Duck : MonoBehaviour
         }
 
         Vector2 vec = new Vector2(_signX, _signY);
-        _duckRigid.MovePosition((Vector2)transform.position + vec * Time.deltaTime * speed);
+        _duckRigid.MovePosition((Vector2)transform.position + vec * Time.deltaTime * speed * _acceleration);
+    }
+
+    public void Runaway()
+    {
+        //총알 세번 못맞추면 도망
+        Debug.Log("오리야 도망가~(총알소진)");
+        StartCoroutine(DuckRunAway());
     }
 
     private void FixedUpdate()
@@ -120,14 +128,13 @@ public class Duck : MonoBehaviour
         }
         
         //10초뒤 도망, 총알 3번 못 맞추면 도망
-        if (_isRunaway)
+        if (_runaway)
         {
             _duckRigid.MovePosition(_duckRigid.position + Vector2.up * Time.deltaTime);
         }
         
         //이동
         DuckMove();
-
         
         //타이머
         if (_isMoving)
@@ -136,26 +143,16 @@ public class Duck : MonoBehaviour
             if (_time <= 0)
             {
                 Debug.Log("오리야 도망가~(시간초과)");
-                _runAway = true;
+                _timeRunaway = true;
                 _time = 10;
             }
             else UIManager.Instance.timeT.text = "Time \n" + Mathf.RoundToInt(_time);
         }
 
         //10초뒤 도망
-        if (_runAway)
+        if (_timeRunaway)
         {
             StartCoroutine(DuckRunAway());
         }
-        
-        //총알 3번 못 맞추면 도망
-        if (UIManager.Instance.shot == 3)
-        {
-            _runAway = true;
-            StartCoroutine(DuckRunAway());
-            UIManager.Instance.shot = 0;
-        }
-        
-        
     }
 }
