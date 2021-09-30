@@ -8,6 +8,7 @@ public class Regen : MonoBehaviour
 
     public List<GameObject> duck;
     private Vector3 _regenPosition;
+    
     void Start()
     {
         StartCoroutine(DuckRegen());
@@ -17,13 +18,13 @@ public class Regen : MonoBehaviour
     {
         while (true)
         {
-            if (GameManager.Instance.stageAnimationPlay || GameManager.Instance.isGameOver)
+            if (GameManager.Instance.animationPlay || GameManager.Instance.isGameOver)
             {
                 yield return new WaitForSeconds(3.5f);
             }
             else
             {
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(1f);
                 if (!duck[0].activeSelf)
                 {
                     _regenPosition = new Vector3(Random.Range(-1.3f, 1.3f), -0.32f, 3);

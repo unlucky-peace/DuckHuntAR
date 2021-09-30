@@ -7,16 +7,23 @@ using UnityEngine;
 public class StartAnimation : MonoBehaviour
 {
     //약간 일회용 스크립트 굳이 이렇게까지 해야하나 싶지만 일단 나중에 리팩토링 하는걸로 하고 임시로 만들어놓음
-    //게임 시작시 애니메이션
+    //게임 시작시 애니메이션 스크립트
+
+    #region Reference
     public GameObject duckPrefab;
     private GameObject _duck;
+    private StageAnimation _stage;
+    #endregion
+
+    #region String
     private const string AnStart = "Start";
-    private Stage _stage;
+    #endregion
+
     private void Start()
     {
         //Dog Start 애니메이션 끝나고 시작함
         StartCoroutine(StartFlying());
-        _stage = GetComponent<Stage>();
+        _stage = GetComponent<StageAnimation>();
     }
     
     //날아가욧
@@ -29,6 +36,6 @@ public class StartAnimation : MonoBehaviour
         //오리 애니메이션 재생을 위해 Animator 얻어오기
         Destroy(_duck, 2f);
         yield return new WaitForSeconds(2f);
-        _stage.StageAnimation();
+        _stage.StageAnimationStart();
     }
 }

@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Stage : MonoBehaviour
+public class StageAnimation : MonoBehaviour
 {
     public TextMeshProUGUI stageText;
     private float sleepTime = 0.3f;
     
-    public void StageAnimation()
+    public void StageAnimationStart()
     {
-        GameManager.Instance.stageAnimationPlay = true;
+        GameManager.Instance.animationPlay = true;
         StartCoroutine(StageTextAniamtion());
     }
 
     IEnumerator StageTextAniamtion()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         //이거 이렇게까지 해야하나 누가 도움좀
         stageText.text += "S";
         yield return new WaitForSeconds(sleepTime);
@@ -33,6 +33,6 @@ public class Stage : MonoBehaviour
         stageText.text += GameManager.Instance.stage;
         yield return new WaitForSeconds(sleepTime + 1);
         stageText.text = "";
-        GameManager.Instance.stageAnimationPlay = false;
+        GameManager.Instance.animationPlay = false;
     }
 }
