@@ -18,7 +18,6 @@ public class StageAnimation : MonoBehaviour
     IEnumerator StageTextAniamtion()
     {
         yield return new WaitForSeconds(1.5f);
-        //이거 이렇게까지 해야하나 누가 도움좀
 
         for (int i = 0; i < stage.Length; i++)
         {
