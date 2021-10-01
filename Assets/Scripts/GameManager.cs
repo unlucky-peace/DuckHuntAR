@@ -79,6 +79,7 @@ public class GameManager : MonoBehaviour
             GameObject uiObj = _uiManager.transform.GetChild(i).gameObject;
             uiObj.SetActive(false);
         }
+        
         clearT.gameObject.SetActive(true);
     }
 
