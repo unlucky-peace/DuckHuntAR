@@ -40,17 +40,12 @@ public class DetectPlane : MonoBehaviour
         if (_arRaycastManager.Raycast(screenSize, hits, TrackableType.Planes))
         {
             //UI, BGM 켜기 안내 문구 지워주세요
-            PopUpUI();
+            lookat.SetActive(false);
+            start.SetActive(true); 
+            title.SetActive(true);
+            shot.SetActive(true);
+            crosshair.SetActive(true);
         }
         //그렇지 않다면 없어
-    }
-    
-    public void PopUpUI()
-    {
-        title.SetActive(true);
-        crosshair.SetActive(true);
-        shot.SetActive(true);
-        start.SetActive(true);
-        lookat.SetActive(false);
     }
 }
