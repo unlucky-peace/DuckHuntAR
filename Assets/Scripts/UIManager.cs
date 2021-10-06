@@ -6,10 +6,20 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    private static UIManager instance;
+    public static UIManager Instance
+    {
+        get
+        {
+            if (instance == null) instance = FindObjectOfType<UIManager>();
+
+            return instance;
+        }
+    }
     #region UI Object
-    public List<GameObject> duckCount;
-    public List<GameObject> heart;
-    public List<GameObject> bullet;
+    [SerializeField] private List<GameObject> duckCount;
+    [SerializeField] private List<GameObject> heart;
+    [SerializeField] private List<GameObject> bullet;
     #endregion
 
     public void DuckHit()

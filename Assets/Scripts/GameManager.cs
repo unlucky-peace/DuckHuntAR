@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
 
     #region Reference
     private StageAnimation _stageScript;
-    private UIManager _uiManager;
     private Duck _duck;
     public TextMeshProUGUI timeT;
     public TextMeshProUGUI clearT;
@@ -38,7 +37,6 @@ public class GameManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
         _stageScript = GetComponent<StageAnimation>();
-        _uiManager = FindObjectOfType<UIManager>();
     }
     public static GameManager Instance {
         get {
@@ -54,7 +52,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("스테이지 클리어");
         stage++;
         if(stage > 3) GameClear();
-        _uiManager.DuckClear();
+        UIManager.Instance.DuckClear();
         animationPlay = true;
         _stageScript.StageAnimationStart();
     }
@@ -62,10 +60,10 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         Debug.Log("게임오버");
-        _child = _uiManager.transform.childCount;
+        _child = UIManager.Instance.transform.childCount;
         for (int i = 0; i < _child; i++)
         {
-            GameObject uiObj = _uiManager.transform.GetChild(i).gameObject;
+            GameObject uiObj = UIManager.Instance.transform.GetChild(i).gameObject;
             uiObj.SetActive(!uiObj.activeSelf);
         }
     }
@@ -73,10 +71,10 @@ public class GameManager : MonoBehaviour
     public void GameClear()
     {
         Debug.Log("게임 클리어");
-        _child = _uiManager.transform.childCount;
+        _child = UIManager.Instance.transform.childCount;
         for (int i = 0; i < _child; i++)
         {
-            GameObject uiObj = _uiManager.transform.GetChild(i).gameObject;
+            GameObject uiObj = UIManager.Instance.transform.GetChild(i).gameObject;
             uiObj.SetActive(false);
         }
         
@@ -93,20 +91,20 @@ public class GameManager : MonoBehaviour
     public void Shot()
     {
         shot++;
-        _uiManager.Shot();
+        UIManager.Instance.Shot();
     }
 
     public void DuckHit()
     {
         hitCount++;
-        _uiManager.DuckHit();
+        UIManager.Instance.DuckHit();
     }
 
     public void Damaged()
     {
         damage++;
         Debug.Log("Damaged 호출");
-        _uiManager.Damaged();
+        UIManager.Instance.Damaged();
         shot = 0;
     }
     
