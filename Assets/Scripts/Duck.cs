@@ -15,6 +15,7 @@ public class Duck : MonoBehaviour
     private bool _isMoving = true;
     private bool _timeRunaway = false;
     private bool _runaway = false;
+    private bool _soundPlay = false;
     #endregion
     
     #region Value
@@ -29,11 +30,13 @@ public class Duck : MonoBehaviour
     #region Component
     private Animator _duckAnim;
     private Rigidbody _duckRigid;
+    private AudioSource _duckAudio;
     #endregion
     
     #region String
     private const string RunAway = "Runaway";
     private const string Die = "Die";
+    private const string DeadSound = "Duck_dead";
     #endregion
     
     #region Start, OnEnable
@@ -41,6 +44,7 @@ public class Duck : MonoBehaviour
     {
         _duckAnim = GetComponent<Animator>();
         _duckRigid = GetComponent<Rigidbody>();
+        _duckAudio = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -69,9 +73,12 @@ public class Duck : MonoBehaviour
     IEnumerator DuckDead()
     {
         Debug.Log("오리가 죽었다");
+        _duckAudio.Stop();
+        _soundPlay = false;
         _duckAnim.SetBool(Die, true);
         yield return new WaitForSeconds(1f);
         _isFalling = true;
+        AudioManager.instance.playSE(DeadSound);
         yield return new WaitForSeconds(3f);
         _isFalling = false;
         gameObject.SetActive(false);
@@ -79,6 +86,8 @@ public class Duck : MonoBehaviour
 
     IEnumerator DuckRunAway()
     {
+        _duckAudio.Stop();
+        _soundPlay = false;
         //위로 날아감
         _isMoving = false;
         _runaway = true;
@@ -109,8 +118,10 @@ public class Duck : MonoBehaviour
             _sign.y *= -1;
             Debug.Log("Y" + _sign.y);
         }
-        
+
+        if (!_soundPlay) _duckAudio.Play();
         _duckRigid.MovePosition(transform.position + _sign * Time.deltaTime * speed * _acceleration);
+        _soundPlay = true;
     }
     
     private void FixedUpdate()
@@ -136,7 +147,7 @@ public class Duck : MonoBehaviour
         
         //이동
         DuckMove();
-        
+
         //타이머
         if (_isMoving)
         {

@@ -18,10 +18,9 @@ public class GameManager : MonoBehaviour
 
     #region Reference
     private StageAnimation _stageScript;
-    private UIManager _uiManager;
     private Duck _duck;
     public TextMeshProUGUI timeT;
-    public TextMeshProUGUI clearT;
+    [SerializeField] private TextMeshProUGUI gameOverT;
     #endregion
 
     #region value
@@ -30,6 +29,8 @@ public class GameManager : MonoBehaviour
     public int hitCount = 0;
     public int shot = 0;
     public int damage = 0;
+    private const string shootSound = "Gun_shot";
+    private const string gameOverSound = "Game_over";
     #endregion
 
 
@@ -38,7 +39,6 @@ public class GameManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
         _stageScript = GetComponent<StageAnimation>();
-        _uiManager = FindObjectOfType<UIManager>();
     }
     public static GameManager Instance {
         get {
@@ -54,18 +54,18 @@ public class GameManager : MonoBehaviour
         Debug.Log("스테이지 클리어");
         stage++;
         if(stage > 3) GameClear();
-        _uiManager.DuckClear();
-        animationPlay = true;
         _stageScript.StageAnimationStart();
     }
 
     public void GameOver()
     {
         Debug.Log("게임오버");
-        _child = _uiManager.transform.childCount;
+        gameOverT.text = "Game Over";
+        AudioManager.instance.playSE(gameOverSound);
+        _child = UIManager.instance.transform.childCount;
         for (int i = 0; i < _child; i++)
         {
-            GameObject uiObj = _uiManager.transform.GetChild(i).gameObject;
+            GameObject uiObj = UIManager.instance.transform.GetChild(i).gameObject;
             uiObj.SetActive(!uiObj.activeSelf);
         }
     }
@@ -73,14 +73,15 @@ public class GameManager : MonoBehaviour
     public void GameClear()
     {
         Debug.Log("게임 클리어");
-        _child = _uiManager.transform.childCount;
+        gameOverT.text = "Game Clear!";
+        _child = UIManager.instance.transform.childCount;
         for (int i = 0; i < _child; i++)
         {
-            GameObject uiObj = _uiManager.transform.GetChild(i).gameObject;
+            GameObject uiObj = UIManager.instance.transform.GetChild(i).gameObject;
             uiObj.SetActive(false);
         }
         
-        clearT.gameObject.SetActive(true);
+        gameOverT.gameObject.SetActive(true);
     }
 
     public void ReturnToTitle()
@@ -93,20 +94,21 @@ public class GameManager : MonoBehaviour
     public void Shot()
     {
         shot++;
-        _uiManager.Shot();
+        AudioManager.instance.playSE(shootSound);
+        UIManager.instance.Shot();
     }
 
     public void DuckHit()
     {
         hitCount++;
-        _uiManager.DuckHit();
+        UIManager.instance.DuckHit();
     }
 
     public void Damaged()
     {
         damage++;
         Debug.Log("Damaged 호출");
-        _uiManager.Damaged();
+        UIManager.instance.Damaged();
         shot = 0;
     }
     
@@ -116,7 +118,8 @@ public class GameManager : MonoBehaviour
         {
             if (hitCount == 10)
             {
-                GameManager.Instance.StageClear();
+                Invoke("StageClear", 3f);
+                animationPlay = true;
                 hitCount = 0;
             }
 
@@ -130,8 +133,8 @@ public class GameManager : MonoBehaviour
             if (damage == 3)
             {
                 damage = 0;
-                GameManager.Instance.GameOver();
-                GameManager.Instance.isGameOver = true;
+                GameOver();
+                isGameOver = true;
             }
         }
     }
