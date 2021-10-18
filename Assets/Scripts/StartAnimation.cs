@@ -17,6 +17,7 @@ public class StartAnimation : MonoBehaviour
 
     #region String
     private const string AnStart = "Start";
+    private const string StartSound = "Start_Sound";
     #endregion
 
     private void Start()
@@ -33,6 +34,9 @@ public class StartAnimation : MonoBehaviour
         yield return new WaitForSeconds(3f);
         //오리 생성
         _duck = Instantiate(duckPrefab, new Vector3(-0.02f, -0.1f, 3), Quaternion.identity);
+        AudioManager.instance.playSE(StartSound);
+        yield return new WaitForSeconds(0.3f);
+        AudioManager.instance.playSE(StartSound);
         //오리 애니메이션 재생을 위해 Animator 얻어오기
         Destroy(_duck, 2f);
         yield return new WaitForSeconds(2f);

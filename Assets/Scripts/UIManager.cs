@@ -6,10 +6,23 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public static UIManager instance;
     #region UI Object
     public List<GameObject> duckCount;
     public List<GameObject> heart;
     public List<GameObject> bullet;
+    #endregion
+    
+    #region 싱글톤
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(this.gameObject);
+    }
     #endregion
 
     public void DuckHit()
