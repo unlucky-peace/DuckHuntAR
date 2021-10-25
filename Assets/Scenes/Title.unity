@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ef990deec51804b9b3eec673e92d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: {fileID: 0}
+  title: {fileID: 1150865686}
   crosshair: {fileID: 1241947473}
   shoot: {fileID: 86879387}
   startTarget: {fileID: 307578374}
