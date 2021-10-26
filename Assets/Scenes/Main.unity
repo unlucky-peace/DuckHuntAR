@@ -3639,7 +3639,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4125,7 +4125,7 @@ MonoBehaviour:
   - {fileID: 1818936898}
   - {fileID: 1818936897}
   - {fileID: 1818936896}
-  bgmAudioSource: {fileID: 1818936895}
+  - {fileID: 1818936895}
   playSoundName: []
   effect:
   - name: Gun_shot
@@ -4144,9 +4144,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c681ed8eca782014d919a3140a7ab610, type: 3}
   - name: Start_Sound
     clip: {fileID: 8300000, guid: 9038242ed2d064148ba98966b15b1c79, type: 3}
-  bgm:
-    name: 
-    clip: {fileID: 0}
+  - name: First_Stage
+    clip: {fileID: 8300000, guid: f0180b24adcc7bc4eafde03d69e07971, type: 3}
 --- !u!4 &1818936901
 Transform:
   m_ObjectHideFlags: 0
