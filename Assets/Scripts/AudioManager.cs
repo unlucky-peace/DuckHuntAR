@@ -26,12 +26,8 @@ public class AudioManager : MonoBehaviour
     #endregion
 
     public AudioSource[] effectAudioSource;
-    public AudioSource bgmAudioSource;
-
     public string[] playSoundName;
-
     public Sound[] effect;
-    public Sound bgm;
 
     private void Start()
     {
