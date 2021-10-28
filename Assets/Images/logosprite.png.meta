@@ -56,7 +56,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -155,7 +155,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 200
         width: 500
         height: 200
       alignment: 0
@@ -176,7 +176,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 500
-        y: 0
+        y: 200
         width: 500
         height: 200
       alignment: 0
@@ -197,7 +197,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1000
-        y: 0
+        y: 200
         width: 500
         height: 200
       alignment: 0
@@ -218,7 +218,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1500
-        y: 0
+        y: 200
         width: 500
         height: 200
       alignment: 0
@@ -238,7 +238,7 @@ TextureImporter:
       name: logosprite_4
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 0
         y: 0
         width: 500
         height: 200
@@ -259,7 +259,7 @@ TextureImporter:
       name: logosprite_5
       rect:
         serializedVersion: 2
-        x: 2500
+        x: 500
         y: 0
         width: 500
         height: 200
@@ -280,7 +280,7 @@ TextureImporter:
       name: logosprite_6
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 1000
         y: 0
         width: 500
         height: 200
@@ -301,7 +301,7 @@ TextureImporter:
       name: logosprite_7
       rect:
         serializedVersion: 2
-        x: 3500
+        x: 1500
         y: 0
         width: 500
         height: 200

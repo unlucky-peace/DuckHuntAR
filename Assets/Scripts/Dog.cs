@@ -33,6 +33,7 @@ public class Dog : MonoBehaviour
     //Round 시작시 나오는 애니메이션
     IEnumerator DogStart()
     {
+        yield return new WaitForSeconds(1.5f);
         //enabled = false 상태의 Sprite를 켜준다
         _dogSprite.enabled = true;
         //애니메이션 재생

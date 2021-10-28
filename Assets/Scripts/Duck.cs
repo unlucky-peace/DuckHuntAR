@@ -98,6 +98,8 @@ public class Duck : MonoBehaviour
         _duckAnim.SetBool(RunAway, true);
         yield return new WaitForSeconds(3f);
         gameObject.SetActive(false);
+        //Runaway 이벤트 종료
+        _runaway = false;
     }
 
     private void DuckMove()
