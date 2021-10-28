@@ -31,7 +31,7 @@ public class StartAnimation : MonoBehaviour
     IEnumerator StartFlying()
     {
         //공백
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(4.5f);
         //오리 생성
         _duck = Instantiate(duckPrefab, new Vector3(-0.02f, -0.1f, 3), Quaternion.identity);
         AudioManager.instance.playSE(StartSound);

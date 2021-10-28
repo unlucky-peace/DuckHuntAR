@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-
+using UnityEngine.UI;
 
 
 public class GameManager : MonoBehaviour
@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     private Duck _duck;
     public TextMeshProUGUI timeT;
     [SerializeField] private TextMeshProUGUI gameOverT;
+    [SerializeField] private Button restartBtn;
+    [SerializeField] private Button exitBtn;
     #endregion
 
     #region value
@@ -78,16 +80,29 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < _child; i++)
         {
             GameObject uiObj = UIManager.instance.transform.GetChild(i).gameObject;
-            uiObj.SetActive(false);
+            uiObj.SetActive(!uiObj.activeSelf);
         }
-        
-        gameOverT.gameObject.SetActive(true);
     }
-
+    
+    //게임 종료시 타이틀로
     public void ReturnToTitle()
     {
-        SceneManager.LoadScene(0);
+        gameOverT.gameObject.SetActive(false);
+        restartBtn.gameObject.SetActive(false);
+        exitBtn.gameObject.SetActive(false);
         isGameOver = false;
+        LoadingSceneControl.LoadScene("Title");
+    }
+    
+    //게임 종료시 어플리케이션 off
+    public void ExitGame()
+    {
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
     
     //GameEvent
@@ -116,6 +131,12 @@ public class GameManager : MonoBehaviour
     {
         if (!isGameOver)
         {
+            if (stage == 3)
+            {
+                damage = 0;
+                GameClear();
+                isGameOver = true;
+            }
             if (hitCount == 10)
             {
                 Invoke("StageClear", 3f);
