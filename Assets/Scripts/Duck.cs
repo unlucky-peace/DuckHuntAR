@@ -5,22 +5,21 @@ using UnityEngine.Events;
 public class Duck : MonoBehaviour
 {
     //유니티 이벤트
-    public UnityEvent onDuckDead;
-    public UnityEvent onDuckRunaway;
+    public UnityEvent onDuckDead; //오리가 죽었을때 일어나는 이벤트
+    public UnityEvent onDuckRunaway; //오리가 도망갔을때 일어나는 이벤트
     
     #region boolType
-    //오리의 죽음 체크 일단 테스트용으로 public 선언 해놓음
-    public bool isDead = false;
-    private bool _isFalling = false;
-    private bool _isMoving = true;
-    private bool _timeRunaway = false;
-    private bool _runaway = false;
-    private bool _soundPlay = false;
+    public bool isDead = false; //오리가 죽었는지 체크 아 이거 public인거 불편한데 프로퍼티로 할 수도 없음
+    private bool _isFalling = false; //오리가 떨어지고 있는 중인지 체크
+    private bool _isMoving = true; //오리가 움직이고 있는 중인지 체크
+    private bool _timeRunaway = false; //오리가 시간초과로 도망갈 경우
+    private bool _runaway = false; //오리가 도망갈 경우
+    private bool _soundPlay = false; //사운드가 재생 중인가?
     #endregion
     
     #region Value
     [Range(0, 20)]
-    public float speed = 2f;
+    public float speed = 0.7f;
     private Vector3 _sign = new Vector3(1, 1);
     private int _duckAngle = 0;
     private float _time = 10f;

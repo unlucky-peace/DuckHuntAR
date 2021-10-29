@@ -45,6 +45,11 @@ public class Shot : MonoBehaviour
                 {
                     LoadingSceneControl.LoadScene("Main");
                 }
+                
+                else if (hit.transform.CompareTag("Tutorial"))
+                {
+                    LoadingSceneControl.LoadScene("Tuto");
+                }
             }
         }
         else
