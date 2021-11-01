@@ -10,7 +10,11 @@ public class Shot : MonoBehaviour
     public Button btn;
     public GameObject arCamera;
     RaycastHit hit;
-    void Start() => btn.onClick.AddListener(Shot_);
+    void OnEnable()
+    {
+        if(SceneManager.GetActiveScene().name == "Main") btn.onClick.AddListener(GameSceneShot);
+        else btn.onClick.AddListener(OtherSceneShot);
+    }
 
     /*
     private void Update()
@@ -23,33 +27,18 @@ public class Shot : MonoBehaviour
     }
     */
 
-    private void Shot_()
+    private void GameSceneShot()
     {
         if(Physics.Raycast(arCamera.transform.position, arCamera.transform.forward, out hit))
         {
-            if (SceneManager.GetActiveScene().name == "Main")
+            GameManager.Instance.Shot();
+            if(hit.transform.CompareTag("Duck"))
             {
-                GameManager.Instance.Shot();
-                if(hit.transform.CompareTag("Duck"))
-                {
-                    //오리 죽음
-                    Debug.Log("맞음");
-                    //맞았을때
-                    hit.transform.GetComponent<Duck>().isDead = true;
-                    GameManager.Instance.shot = 0;
-                }
-            }
-            else if (SceneManager.GetActiveScene().name == "Title")
-            {
-                if (hit.transform.CompareTag("Start"))
-                {
-                    LoadingSceneControl.LoadScene("Main");
-                }
-                
-                else if (hit.transform.CompareTag("Tutorial"))
-                {
-                    LoadingSceneControl.LoadScene("Tuto");
-                }
+                //오리 죽음
+                Debug.Log("맞음");
+                //맞았을때
+                hit.transform.GetComponent<Duck>().isDead = true;
+                GameManager.Instance.shot = 0;
             }
         }
         else
@@ -58,5 +47,20 @@ public class Shot : MonoBehaviour
             Debug.Log("Raycast가 안맞음");
             //쐈는데 안맞았다
         }
+    }
+
+    private void OtherSceneShot()
+    {
+        AudioManager.instance.playSE("Gun_shot");
+        if(Physics.Raycast(arCamera.transform.position, arCamera.transform.forward, out hit))
+        {
+            if (hit.transform.CompareTag("TutorialDuck")) hit.collider.GetComponent<TutorialDuck>().Dead();
+        }
+        else
+        {
+            Debug.Log("Raycast가 안맞음");
+            //쐈는데 안맞았다
+        }
+        
     }
 }

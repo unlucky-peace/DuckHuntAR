@@ -12,7 +12,7 @@ public class DialogueManager : MonoBehaviour
     public Text outputText;
     private string _output;
     private const float sleepTime = 0.07f;
-    private int _dialogueIdx = 0;
+    public int dialogueIdx = 0;
     #endregion
     
     #region bool
@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
 
     #region Ref
     private GunUIHighlight _gunUIHighlight;
+    [SerializeField] private GameObject tutorialDuck;
     #endregion
 
     #region singleton
@@ -50,7 +51,7 @@ public class DialogueManager : MonoBehaviour
     {
         outputText.text = "";
         _isTalking = true;
-        _output = dialogue[_dialogueIdx];
+        _output = dialogue[dialogueIdx];
         StartCoroutine(TextAnimation());
     }
 
@@ -63,23 +64,23 @@ public class DialogueManager : MonoBehaviour
         }
         SelectEvent();
         _isTalking = false;
+        
     }
 
     private void SelectEvent()
     {
-        switch (_dialogueIdx)
+        //스위치 문쓰다가 귀찮아서 스크립투 몇 줄 줄임..
+        switch (dialogueIdx)
         {
             case 2:
                 eventProgress = true;
                 _gunUIHighlight.actionStart = true;
                 break;
-            case 3:
+            case 4:
                 eventProgress = true;
+                Invoke("TutorialDuckGen", 3f);
                 break;
-            case 6:
-                eventProgress = true;
-                break;
-            case 10:
+            case 7:
                 StartCoroutine(NextSceneAnimation());
                 break;
             default:
@@ -92,22 +93,23 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         _goGameMode = true;
     }
-    
+
+    private void TutorialDuckGen() => Instantiate(tutorialDuck,new Vector3(0, -0.32f, 3), tutorialDuck.transform.rotation);
 
     private void Update()
     {
         if (!_isTalking && gameObject.activeSelf && !eventProgress)
         {
 #if UNITY_EDITOR
-            if (Input.GetMouseButtonDown(0) && _dialogueIdx < dialogue.Count - 1)
+            if (Input.GetMouseButtonDown(0) && dialogueIdx < dialogue.Count - 1)
             {
-                _dialogueIdx++;
+                dialogueIdx++;
                 StartTextAnimation();
             }
 #else
-            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && _dialogueIdx < dialogue.Count - 1)
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && dialogueIdx < dialogue.Count - 1)
             {
-                _dialogueIdx++;
+                dialogueIdx++;
                 StartTextAnimation();
             }
 #endif
