@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 403610804}
   - component: {fileID: 403610806}
   - component: {fileID: 403610805}
+  - component: {fileID: 403610807}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -543,6 +544,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 403610803}
   m_CullTransparentMesh: 1
+--- !u!114 &403610807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403610803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db652803caa2dac448a378e289f3e32a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - "<Duck Hunt AR> \uD29C\uD1A0\uB9AC\uC5BC \uBAA8\uB4DC\uC5D0 \uC628\uAC78 \uD658\uC601\uD574!\u25BC"
+  - "\uB0A0\uC544\uB2E4\uB2C8\uB294 \uC624\uB9AC\uB97C \uC7A1\uC73C\uBA74 \uB418\uB294
+    \uAC8C\uC784\uC774\uC57C \uC815\uB9D0 \uAC04\uB2E8\uD558\uC9C0?\u25BC"
+  - "\uCD1D\uC744 \uC3D8\uB294 \uBC84\uD2BC\uC740 \uC624\uB978\uCABD \uC544\uB798\uC5D0
+    \uC788\uC5B4\u25BC"
+  - "\uC790 \uADF8\uB7FC \uC624\uB9AC\uB97C \uD55C \uB9C8\uB9AC \uB9CC\uB4E4\uC5B4
+    \uC904\uAC8C!\u25BC"
+  - "\uCD1D 3\uBC88\uAE4C\uC9C0 \uC3E0 \uC218 \uC788\uC73C\uB2C8\uAE4C \uC2E0\uC911\uD558\uAC8C
+    \uC3F4\uC57C \uD574!"
+  - "\uC798\uD588\uC5B4\u25BC"
+  - "\uC544! \uC624\uB9AC\uB97C \uC138 \uBC88 \uB193\uCE58\uBA74 \uAC8C\uC784\uC774
+    \uB05D\uB098\uBC84\uB9AC\uB2C8 \uC870\uC2EC\uD574!\u25BC"
+  - "\uADF8\uB7FC \uD29C\uD1A0\uB9AC\uC5BC\uC774 \uB05D\uB0AC\uC5B4 \uC548\uB155!"
+  outputText: {fileID: 1774713424}
+  dialogueIdx: 0
+  eventProgress: 0
+  tutorialDuck: {fileID: 4417877477071031310, guid: 04e08a6245b3ed14d8062b82f3b14586, type: 3}
 --- !u!1 &707200377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1198,6 +1229,8 @@ GameObject:
   - component: {fileID: 1662209157}
   - component: {fileID: 1662209156}
   - component: {fileID: 1662209155}
+  - component: {fileID: 1662209158}
+  - component: {fileID: 1662209159}
   m_Layer: 5
   m_Name: Shot
   m_TagString: Untagged
@@ -1306,6 +1339,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662209153}
   m_CullTransparentMesh: 1
+--- !u!95 &1662209158
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662209153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ce12f87bb1aae54099d4cee11ea9b9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1662209159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662209153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239f562d38852e040a3d693f667318e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 1662209155}
+  arCamera: {fileID: 1171582490}
 --- !u!1 &1774713422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,7 +1383,6 @@ GameObject:
   - component: {fileID: 1774713423}
   - component: {fileID: 1774713425}
   - component: {fileID: 1774713424}
-  - component: {fileID: 1774713426}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -1377,8 +1442,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "<Duck Hunt AR> \uD29C\uD1A0\uB9AC\uC5BC \uBAA8\uB4DC\uC5D0 \uC628\uAC78
-    \uD658\uC601\uD574!"
+  m_Text: 
 --- !u!222 &1774713425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1387,36 +1451,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774713422}
   m_CullTransparentMesh: 1
---- !u!114 &1774713426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774713422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db652803caa2dac448a378e289f3e32a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - "<Duck Hunt AR> \uD29C\uD1A0\uB9AC\uC5BC \uBAA8\uB4DC\uC5D0 \uC628\uAC78 \uD658\uC601\uD574!"
-  - "\uB0A0\uC544\uB2E4\uB2C8\uB294 \uC624\uB9AC\uB97C \uC7A1\uC73C\uBA74 \uB418\uB294
-    \uAC8C\uC784\uC774\uC57C \uC815\uB9D0 \uAC04\uB2E8\uD558\uC9C0?"
-  - "\uCD1D\uC744 \uC3D8\uB294 \uBC84\uD2BC\uC740 \uC624\uB978\uCABD \uC544\uB798\uC5D0
-    \uC788\uC5B4~"
-  - "\uC790 \uADF8\uB7FC \uC624\uB9AC\uB97C \uD55C \uB9C8\uB9AC \uB9CC\uB4E4\uC5B4
-    \uC904\uAC8C!"
-  - "\uC798\uD588\uC5B4"
-  - "\uC774\uBC88\uC5D4 \uC624\uB9AC\uAC00 \uB0A0\uC544\uB2E4\uB2D0 \uAC70\uC57C"
-  - "\uCD1D 3\uBC88\uAE4C\uC9C0 \uC3E0 \uC218 \uC788\uC73C\uB2C8\uAE4C \uC2E0\uC911\uD558\uAC8C
-    \uC3F4\uC57C\uD574"
-  - "\uC798\uD588\uC5B4"
-  - "\uC800\uB7F0~ \uC624\uB9AC\uB97C 3\uB9C8\uB9AC \uB193\uCE58\uBA74 \uAC8C\uC784\uC774
-    \uC885\uB8CC\uB418\uB2C8 \uC870\uC2EC\uD574"
-  - "\uADF8\uB7FC \uD29C\uD1A0\uB9AC\uC5BC\uC774 \uB05D\uB0AC\uC5B4~ \uC548\uB155"
-  outputText: {fileID: 1774713424}
-  eventProgress: 0
 --- !u!1 &1845180663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,6 +1462,7 @@ GameObject:
   - component: {fileID: 1845180666}
   - component: {fileID: 1845180665}
   - component: {fileID: 1845180664}
+  - component: {fileID: 1845180667}
   m_Layer: 0
   m_Name: AR Session
   m_TagString: Untagged
@@ -1476,6 +1511,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1845180667
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845180663}
+  m_Enabled: 1
 --- !u!1 &3289049275299831144
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,73 +1530,45 @@ GameObject:
   - component: {fileID: 3289049275299831150}
   - component: {fileID: 3289049275299831149}
   - component: {fileID: 3289049275299831147}
+  - component: {fileID: 3289049275299831148}
   - component: {fileID: 3289049275299831146}
   - component: {fileID: 3289049275299831145}
-  - component: {fileID: 3289049275299831148}
   m_Layer: 0
   m_Name: TutorialDuck
-  m_TagString: Duck
+  m_TagString: TutorialDuck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!50 &3289049275299831145
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!54 &3289049275299831145
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3289049275299831144}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
+  serializedVersion: 2
   m_Mass: 1
-  m_LinearDrag: 0
+  m_Drag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_UseGravity: 1
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_Constraints: 120
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!60 &3289049275299831146
-PolygonCollider2D:
+--- !u!65 &3289049275299831146
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3289049275299831144}
-  m_Enabled: 1
-  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.35, y: 0.34}
-    newSize: {x: 0.35, y: 0.34}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.105, y: 0.089999996}
-      - {x: 0.015, y: 0.14999999}
-      - {x: 0.005, y: 0.16}
-      - {x: -0.085, y: 0.16}
-      - {x: -0.16499999, y: 0.049999997}
-      - {x: -0.16499999, y: -0.099999994}
-      - {x: -0.125, y: -0.16}
-      - {x: -0.095, y: -0.14}
-      - {x: 0.035, y: -0.089999996}
-      - {x: 0.175, y: -0.04}
-      - {x: 0.175, y: 0.02}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35, y: 0.34, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &3289049275299831147
 Animator:
   serializedVersion: 3
