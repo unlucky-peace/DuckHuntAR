@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour
         playSoundName = new string[effectAudioSource.Length];
     }
 
-    public void playSE(string _name)
+    public void PlaySE(string _name)
     {
         for (int i = 0; i < effect.Length; i++)
         {

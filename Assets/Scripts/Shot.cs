@@ -49,7 +49,7 @@ public class Shot : MonoBehaviour
     //게임 씬을 제외한 씬에서 사용하는 메소드
     private void OtherSceneShot()
     {
-        AudioManager.instance.playSE("Gun_shot");
+        AudioManager.instance.PlaySE("Gun_shot");
         if(Physics.Raycast(arCamera.transform.position, arCamera.transform.forward, out _hit))
         {
             if (_hit.transform.CompareTag("TutorialDuck")) _hit.collider.GetComponent<TutorialDuck>().Dead();
