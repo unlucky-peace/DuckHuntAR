@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4417877477071031305}
   m_Layer: 0
   m_Name: TutorialDuck
-  m_TagString: Duck
+  m_TagString: TutorialDuck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,6 +243,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fa4d716346d1d543aa18aaf61c59373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionStart: 0
   isDead: 0
   speed: 0.7
