@@ -52,7 +52,7 @@ public class Dog : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _dogSprite.enabled = true;
         _dogAnim.SetBool(laugh, true);
-        AudioManager.instance.playSE(laughSound);
+        AudioManager.instance.PlaySE(laughSound);
         GameManager.Instance.animationPlay = false;
         yield return new WaitForSeconds(2.5f);
         _dogAnim.SetBool(laugh, false);
@@ -67,7 +67,7 @@ public class Dog : MonoBehaviour
         //hunt 정보 받아와서 1, 2 번 재생 선택하기
         _dogAnim.SetBool(hunt + 1, true);
         GameManager.Instance.animationPlay = false;
-        AudioManager.instance.playSE(huntSound);
+        AudioManager.instance.PlaySE(huntSound);
         yield return new WaitForSeconds(3f);
         _dogAnim.SetBool(hunt + 1, false); 
         _dogSprite.enabled = false;

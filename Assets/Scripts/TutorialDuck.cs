@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TutorialDuck : MonoBehaviour
 {
-    //상속으로 구현하기   
+    //상속으로 구현하기 해당 스크립트는 Duck.cs와 유사
     #region boolType
     public bool isDead = false; //오리가 죽었는지 체크 아 이거 public인거 불편한데 프로퍼티로 할 수도 없음
     private bool _isFalling = false; //오리가 떨어지고 있는 중인지 체크
@@ -61,7 +61,7 @@ public class TutorialDuck : MonoBehaviour
         _duckAnim.SetBool(Die, true);
         yield return new WaitForSeconds(1f);
         _isFalling = true;
-        AudioManager.instance.playSE(DeadSound);
+        AudioManager.instance.PlaySE(DeadSound);
         yield return new WaitForSeconds(3f);
         DialogueManager.Instance.eventProgress = false;
         _isFalling = false;
