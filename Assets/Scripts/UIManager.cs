@@ -58,4 +58,13 @@ public class UIManager : MonoBehaviour
             t.GetComponent<Image>().color = Color.white;
         }
     }
+
+    public void Recover()
+    {
+        //스테이지 클리어시 HP 복구
+        foreach (var t in heart)
+        {
+            t.SetActive(true); //HP 복구
+        }
+    }
 }

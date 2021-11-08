@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,6 +33,7 @@ public class StageAnimation : MonoBehaviour
         AudioManager.instance.PlaySE(stageClearSound); //스테이지 시작 브금
         yield return new WaitForSeconds(1.5f); //휴지
         UIManager.instance.DuckClear(); //스테이지가 시작 되면 UI 부분의 오리를 초기화 시켜줌
+        UIManager.instance.Recover();
         TextAnimationStart(); //스테이지를 알려주는 텍스트 코루틴 호출
         //텍스트 애니메이션 재생 동안 기다림
         yield return new WaitForSeconds(sleepTime * (output.Length + 1) + 1); //아 여기 async로 하거나 그냥 아예 타임라인으로 해야 편한데

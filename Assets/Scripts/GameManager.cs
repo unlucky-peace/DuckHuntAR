@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("스테이지 클리어");
         stage++;
+        damage = 0; //데미지 입은 횟수 초기화
         if(stage > 3) GameClear();
         _stageScript.StageAnimationStart(); //스테이지 클리어 했을때 다음 스테이지 시작 애니메이션 재생
     }
