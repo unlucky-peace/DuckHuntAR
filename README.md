@@ -26,6 +26,6 @@
 21.9.20~21.10.1(약 2주)   
  
 ## 기타   
-[28s' CM](https://youtu.be/qqRJA_b1Am4)   
+[28s' CM](https://youtu.be/xVejSro9AwY)   
 [프로젝트 페이지](https://gigantic-sting-ead.notion.site/Duck-Hunt-AR-d84b9480c02446c690658f8fa2d2a833)   
-[시연영상]()
+[시연영상](https://youtu.be/5nYL_v4SF8Y)
