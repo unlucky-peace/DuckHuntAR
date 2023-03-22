@@ -27,5 +27,5 @@
  
 ## 기타   
 [28s' CM](https://youtu.be/xVejSro9AwY)   
-[프로젝트 페이지](https://gigantic-sting-ead.notion.site/Duck-Hunt-AR-daed257ef2084808a41e0055ab9d725c)   
+[프로젝트 페이지](https://unlucky-peace.notion.site/Duck-Hunt-AR-daed257ef2084808a41e0055ab9d725c)   
 [시연영상](https://youtu.be/5nYL_v4SF8Y)
